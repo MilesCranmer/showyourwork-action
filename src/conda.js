@@ -41,7 +41,7 @@ async function setupConda() {
   // Download and setup conda
   if (!shell.test("-d", "~/.conda")) {
     exec(
-      "wget --no-verbose https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ./conda.sh", 
+      "wget --no-verbose https://repo.anaconda.com/miniconda/Miniconda3-py39_4.11.0-Linux-x86_64.sh -O ./conda.sh", 
       "Download conda"
     );
     exec("bash ./conda.sh -b -p ~/.conda && rm -f ./conda.sh", "Install conda");
